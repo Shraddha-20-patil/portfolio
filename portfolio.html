@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <style>
+        /* Reset some default styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Basic page setup */
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;    
+            background-color: #FFFECE;
+            color: #333;
+        }
+
+        /* Home Section */
+        #home {
+            text-align: center;
+            padding: 50px;
+            background: #cb997e;
+            color: ;
+        }
+
+        #home h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+
+        #home .btn {
+            padding: 10px 20px;
+            background-color: #5c6bc0;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+
+        #home .btn:hover {
+            background-color: #3f4a94;
+        }
+
+        /* About Section */
+        #about {
+            padding: 50px;
+            background-color: #fff1e6;
+            text-align: center;
+        }
+
+        #about h2 {
+            font-size: 2rem;
+        }
+
+        /* Projects Section */
+        #projects {
+            padding: 50px;
+            background-color: #eddcd2;
+        }
+
+        .project-cards {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+        }
+
+        .card {
+            background-color: #fff1e6;
+            border-radius: 8px;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .card img {
+            width: 100%;
+            border-radius: 8px;
+        }
+
+        .card h3 {
+            margin: 15px 0;
+            font-size: 1.2rem;
+        }
+
+        .card p {
+            font-size: 1rem;
+            color: #666;
+        }
+
+        .card a {
+            display: inline-block;
+            margin-top: 10px;
+            padding: 10px 20px;
+            background-color: #5c6bc0;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+
+        .card:hover {
+            transform: translateY(-10px);
+        }
+
+        /* Skills Section */
+        #skills {
+            padding: 50px;
+            background-color: #fff1e6;
+        }
+
+        .skill {
+            margin-bottom: 20px;
+        }
+
+        .skill h3 {
+            font-size: 1.2rem;
+            margin-bottom: 5px;
+        }
+
+        .progress-bar {
+            width: 0;
+            height: 10px;
+            background-color: #5c6bc0;
+            border-radius: 5px;
+        }
+
+        /* Contact Section */
+        #contact {
+            padding: 50px;
+            background-color: #ddbea9;
+            text-align: center;
+        }
+
+        #contact form input,
+        #contact form textarea {
+            width: 80%;
+            padding: 10px;
+            margin: 10px 0;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+
+        #contact form button {
+            padding: 10px 20px;
+            background-color: #5c6bc0;
+            color: white;
+            border: none;
+            border-radius: 5px;
+        }
+
+        #contact form button:hover {
+            background-color: #3f4a94;
+        }
+
+        /* Smooth scrolling */
+        html {
+            scroll-behavior: smooth;
+        }
+        p {
+            font-size: 25px;
+        }
+        .profile-img {
+            width: 150px; /* Adjust size as needed */
+            height: 150px;
+            border-radius: 50%; /* Makes the image circular */
+            object-fit: cover; /* Ensures the image fills the circle */
+            border: 3px solid #000; /* Optional: border */
+        }
+        .font-size{
+            font-size: 20px;
+        }
+        
+        
+
+    </style>
+</head>
+<body>
+    <!-- Home Section -->
+    <section id="home">
+        <h1>Welcome to My Portfolio</h1>
+        <p>Hello, I'm SHRADDHA PATIL</p>
+        <img src="image.jpg" class="profile-img">
+        <br>
+        <a href="#about" class="btn">Learn More About Me</a>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+        <h2>About Me</h2>
+        <p>Hello! I'm Shraddha Patil, a first-year Electronics and Telecommunication Engineering student at MITAOE in Pune. My fascination with technology drives me to explore both hardware and software domains. I'm particularly enthusiastic about programming and am actively learning languages like Python and C++ to bridge the gap between electronics and software development. I'm eager to apply my skills in real-world projects and contribute to innovative solutions in the tech industry..</p>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+        <h1>My Projects</h1>
+        <div class="project-cards">
+            <!-- Example project card -->
+            <div class="card">
+                <h3>Website</h3>
+                <p>It is a website where we can find nearest ATMs with real time cash availibility.</p>
+                <a href="https://sharv132006.github.io/atm-services-l/" class="btn">View Project</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills">
+        <h1>Skills</h1>
+        <div class="skill">
+           <p class="font-size">Technical skills: C,C++,Python<br>
+            Web Development: HTML,CSS</p> 
+        </div>
+        <!-- Add more skills as needed -->
+    </section>
+        <!-- Certifications Section -->
+        <section id="certifications" style="padding: 50px; background-color: #f0efeb; text-align: center;">
+            <h1>Certifications</h1>
+            <div class="cert-list" style="margin-top: 30px;">
+                <div style="margin-bottom: 20px;">
+                    <h3 style="font-size: 1.2rem;">Cisco certifications</h3>
+                    <img src="image1.png" height="300">
+                </div>
+               
+                <!-- Add more certifications as needed -->
+            </div>
+        </section>
+    
+   
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <h1>Contact Me</h1>
+            <div class="card">
+                <h3>Email</h3>
+                <p>202401100106@mitaoe.ac.in</p>
+            </div>
+            <div class="card">
+                <h3>Contact number</h3>
+                <p>9353541509</p>
+    </section>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const progressBars = document.querySelectorAll(".progress-bar");
+
+            progressBars.forEach(function (bar) {
+                const value = bar.style.width;
+                bar.style.width = "0"; // Start from 0 width
+
+                // Animate the progress bar
+                setTimeout(function () {
+                    bar.style.transition = "width 2s";
+                    bar.style.width = value;
+                }, 500);
+            });
+        });
+    </script>
+</body>
+</html>
